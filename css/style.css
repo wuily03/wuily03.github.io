@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #f5f5f5, #6a5acd, #2f4f4f); /* Gradiente de blanco a morado a azul oscuro */ 
+    color: #333; /* Cambia el color del texto a un tono más oscuro para mejorar el contraste */
+}
+
+header {
+    background-color: transparent;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-image: url('./img/logo.png'); /* Reemplaza 'tu_imagen_del_perrito.png' con la ruta de tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+    animation: sit 2s infinite alternate; /* Agrega la animación 'sit' */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0004ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffbb33dc;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #fff;
+    color: #8d0df5;
+}
+
+/* Estilos de la sección del chatbot */
+.chatbot {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.chatbot h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.chatbot p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.chatbot .chart {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+/* Estilos para el footer */
+footer {
+    color: #050505;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f5f2f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.creator-credit {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #f8f6f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav .logo {
+    width: 50px; /* Ajusta el tamaño del contenedor según sea necesario */
+    height: 50px; /* Ajusta el tamaño del contenedor según sea necesario */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}
+
+.nav .logo img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que no sobrepase el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+}

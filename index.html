@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .chatbot {
+            width: 100%;
+            max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+            margin: 0 auto; /* Centra el chatbot horizontalmente */
+        }
+        #chatbot-container {
+            width: 100%;
+            height: 600px; /* Ajusta la altura según tus preferencias */
+            border: 1px solid #ccc; /* Agrega un borde para mayor claridad */
+            border-radius: 8px; /* Agrega bordes redondeados para un aspecto más agradable */
+            overflow: hidden; /* Oculta el desbordamiento del contenido del chatbot */
+        }
+        #chatbot-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Elimina el borde del iframe */
+        }
+        .hero {
+            position: relative; /* Agrega posición relativa para posicionar elementos secundarios */
+            text-align: center; /* Centra el contenido */
+            padding-top: 50px; /* Ajusta el espacio para el GIF */
+        }
+        .gif-container {
+            position: center;
+            top: 0;
+            left: 0;
+            width: 100px; /* Ajusta el ancho del GIF */
+            height: auto; /* Mantiene la proporción del GIF */
+            z-index: 1000; /* Asegura que el GIF esté en la parte superior */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+    
+        <h1>Bienvenido a Bengi</h1>
+        <p>¡Hola! Soy Bengi, tu asistente virtual.</p>
+     
+        <div class="buttons">
+            <a href="#" class="btn">Empezar</a>
+            <a href="#" class="btn btn-secondary">Aprende más →</a>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <div id="chatbot-container">
+            <!-- Aquí se integrará el chatbot desde la URL proporcionada -->
+            <iframe 
+                src="https://www.stack-ai.com/internal_ui/7829067e-815d-42ad-ab6e-d980d0a2022e/94bca2b6-5050-4577-964a-29387f8d9b71/663c46e164cf8efeb959c895" 
+                title="Chatbot"
+                allow="microphone; camera; geolocation">
+            </iframe>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+        Bengi - Todos los derechos reservados &copy; 2024 | <a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a>
+    </footer>
+    <div class="creator-credit">
+        Creado por Ing. Jose Guillermo Diaz Rodriguez
+    </div>
+</body>
+</html>
